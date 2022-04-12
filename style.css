@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  font-family: "Libre Franklin", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  margin-top: 2em;
+}
+h1 {
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 1.3em 0 0.5em;
+  color: hsl(0, 0%, 59%);
+}
+span {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+h2 {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: hsl(209, 33%, 12%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em 0;
+  width: 80%;
+  gap: 0.5em;
+}
+input {
+  border-radius: 50px;
+}
+#input-email {
+  border: 1px solid hsl(223, 100%, 88%);
+  width: 100%;
+  padding: 1em 0em 1em 2em;
+}
+
+#submit-btn {
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  padding: 1em 0em;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0em 0.5em 0.5em hsla(210, 32%, 12%, 0.172);
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+h3 {
+  text-align: center;
+  color: hsl(354, 100%, 66%);
+  font-size: 0.8em;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 1.5em;
+  display: none;
+}
+.illustration {
+  width: 90%;
+}
+
+footer {
+  margin-top: 5em;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.social-icons i {
+  border: 1px solid hsl(223, 100%, 88%);
+  padding: 0.5em;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  object-fit: contain;
+  color: hsl(223, 87%, 63%);
+}
+p {
+  margin-top: 2em;
+  font-size: 0.8em;
+  color: hsl(0, 0%, 59%);
+}
+/* error state */
+
+.error h3 {
+  display: block;
+}
+.error #input-email {
+  border-color: hsl(354, 100%, 66%);
+}
+
+@media screen and (min-width: 992px) {
+  .logo {
+    margin-top: 1em;
+  }
+  h1 {
+    font-size: 2.5em;
+    padding-top: 1em;
+  }
+  h3 {
+    /* display: block; */
+    padding-top: 0.5em;
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 0.7em;
+  }
+  form {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8em;
+  }
+  #input-email {
+    width: 150%;
+  }
+  #submit-btn {
+    margin-top: 0;
+    width: 13%;
+  }
+  .w-error {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .illustration {
+    width: 40%;
+  }
+  footer {
+    margin-top: 2em;
+  }
+
+  /* hover states */
+  #submit-btn:hover {
+    background-color: hsl(223, 100%, 88%);
+    cursor: pointer;
+  }
+
+  .social-icons i:hover {
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+  }
+}
